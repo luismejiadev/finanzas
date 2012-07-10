@@ -33,7 +33,7 @@ class Cuota(models.Model):
     
 
 class Cuenta(models.Model):
-    nombre = models.CharField(max_length=600,unique=True)
+    nombre = models.CharField(max_length=255,unique=True)
     minino = models.DecimalField(max_digits=14 ,decimal_places=2)
     moneda = models.ForeignKey(Moneda)
     
